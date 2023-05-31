@@ -1,6 +1,6 @@
 package com.pruchnik.SolarObjects.connection;
 
-import com.pruchnik.SolarObjects.objectss.Message;
+import com.pruchnik.SolarObjects.objects.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.messaging.handler.annotation.Header;
@@ -13,7 +13,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.messaging.SessionConnectedEvent;
-import org.springframework.web.socket.messaging.SessionDisconnectEvent;
 import org.springframework.web.socket.messaging.StompSubProtocolHandler;
 
 import java.security.Principal;
@@ -59,7 +58,10 @@ public class WebSocketController {
             return "result :" + message + " " + principal.getName();
         });
 
-        messagingTemplate.convertAndSendToUser(sessionId, "/sim/transfer", message);
+        messagingTemplate.convertAndSendToUser(sessionId, "/sim/transfer", message + " by ID");
+
+        messagingTemplate.convertAndSendToUser(principal.getName(), "/sim/transfer", message + " by principal");
+
         try {
             String finalResult = future.get();
             return finalResult;

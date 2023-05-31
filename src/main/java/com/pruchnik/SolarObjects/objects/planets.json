@@ -1,0 +1,56 @@
+{
+  "date": "2023-04-23T00:00:00.000Z",
+  "planets":
+{
+  "Sun": {
+    "longitude": 33.302,
+    "latitude": 0.019,
+    "distance": 0
+  },
+  "Mercury": {
+    "longitude": 39.458,
+    "latitude": 3.187,
+    "distance": 0.607
+  },
+  "Venus": {
+    "longitude": 272.393,
+    "latitude": 5.634,
+    "distance": 0.743
+  },
+  "Earth": {
+    "longitude": 33.302,
+    "latitude": 0.019,
+    "distance": 0.999
+  },
+  "Mars": {
+    "longitude": 231.225,
+    "latitude": 2.217,
+    "distance": 1.454
+  },
+  "Jupiter": {
+    "longitude": 271.155,
+    "latitude": -0.585,
+    "distance": 5.164
+  },
+  "Saturn": {
+    "longitude": 296.038,
+    "latitude": -1.166,
+    "distance": 9.055
+  },
+  "Uranus": {
+    "longitude": 5.289,
+    "latitude": 0.751,
+    "distance": 18.863
+  },
+  "Neptune": {
+    "longitude": 343.754,
+    "latitude": -0.436,
+    "distance": 29.504
+  },
+  "Pluto": {
+    "longitude": 284.791,
+    "latitude": -17.246,
+    "distance": 32.099
+  }
+}
+}

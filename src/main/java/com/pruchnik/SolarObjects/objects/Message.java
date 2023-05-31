@@ -1,4 +1,4 @@
-package com.pruchnik.SolarObjects.objectss;
+package com.pruchnik.SolarObjects.objects;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
